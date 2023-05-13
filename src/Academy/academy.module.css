@@ -1,0 +1,131 @@
+:root{
+    --button:#1e66da;
+    --fontColor: #fff;
+    --heading:rgb(95, 85, 85);
+}
+
+#ViewAcademyDashBoardBlock{
+    width: 82vw;
+}
+#ViewAcademyDashBoardNumber{
+    width: inherit;
+    height: 7vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 4vh;
+    padding-top: 5px;
+    font-weight: 500;
+    font-style:oblique;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-bottom: 2px solid red;
+}
+#ViewAcademyDashBoardNumber span{
+    display: flex;
+    justify-content: center;
+    height: 38px;
+    width: 2vw;
+    background-color: red;
+    border-radius: 10px;
+    color: #fff;
+}
+
+#ViewAcademyDashBoardArticle{
+    display: flex;
+    flex-wrap: wrap;
+}
+#ViewAcademyDashBoardArticle nav{
+    width: 350px;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    /* display: flex ;
+    flex-direction: column;
+    align-items: center; */
+    margin: 10px;
+    position: relative;
+    left: 20px;
+    color: #d2c8c8;
+}
+#ViewAcademyDashBoardArticle  ul {
+    /* justify-content: center; */
+    margin: 5px;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 1px;
+    list-style: none;
+    width: 320px;
+    padding: 10px;
+    height: 33vh;
+}
+
+#ViewAcademyDashBoardArticle ul li{
+    padding: 5px;
+}
+
+#ViewAcademyDashBoardArticle h3{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.9vh;
+    color: var(--fontColor);
+}
+#ViewAcademyDashBoardArticle div{
+    width: inherit;
+    display: flex ;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+#ViewAcademyDashBoardArticle button{
+    height: 24px;
+    width: 130px;
+    color: #fff;
+    background-color: rgb(236, 55, 55);
+    margin: 5px;
+    border-radius: 4px;
+    border: none;
+    font-size: 2.3vh;
+}
+#ViewAcademyDashBoardArticle button:hover{
+    background-color: #e7bd52;
+    width: 132px;
+}
+#ViewAcademyDashBoardArticle a{
+    color: #fff;
+}
+
+/* EditAcademyBlock */
+
+#EditAcademyBlock{
+    width: 83vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#EditAcademyBlock h2{
+    padding-bottom: 10px;
+    border-bottom: 2px solid red;
+}
+#EditAcademyBlock  form{
+    display: flex;
+    flex-direction: column;
+}
+#EditAcademyBlock  form label{
+    margin: 10px ;
+    font-size: 20px;
+}
+#EditAcademyBlock  form input{
+    margin-left: 20px;
+    width: 30vw;
+    height: 30px;
+    /* border-radius: 2px; */
+    outline: none;
+}
+#EditAcademyBlock  button{
+    width: 10vw;
+    height: 30px;
+    margin: 10px;
+    color: white;
+    background-color: black;
+}

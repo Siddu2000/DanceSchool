@@ -1,0 +1,208 @@
+/* acacdemy manager register */
+/* admin register css */
+
+:root{
+    --white:#eee;
+}
+
+#blockTwo{
+    background-color: #716969;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+    left: 350px;
+    top: 20px;
+    /* padding-left: 10px; */
+    /* margin-top: 30px; */
+    /* cursor: pointer; */
+    /* border: 2px solid black; */
+}
+#blockTwoSectionOne{
+    flex-basis: 30%;
+    cursor:grab;
+    opacity: 0.8;
+}
+#blockTwoSectionTwo{
+    display: flex;
+    position: absolute;
+    /* border: 2px solid black; */
+    flex-basis: 18%;
+    margin-left: 10px;
+    color: var(--white);
+}
+#blockTwoSectionTwo h3{
+    text-align: center;
+    /* font-family:Arial, Helvetica, sans-serif; */
+    font-size: 3vh;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: var(--white);
+}
+#blockTwoDivOne{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+#blockTwoDivOne label{
+    color:  var(--white);
+}
+#blockTwoDivOne input{
+    height: 3.8vh;
+    margin-top: 4px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid var(--button);
+}
+
+#blockTwoDivTwo{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+#blockTwoDivTwo input{
+    height: 3.8vh;
+    margin-top: 4px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid var(--button);
+}
+
+#blockTwoDivThree{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+#blockTwoDivThree input{
+    height: 3.8vh;
+    margin-top: 4px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid var(--button);
+}
+
+#blockTwoDivFour{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+#blockTwoDivFour input{
+    height: 3.8vh;
+    margin-top: 4px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid var(--button);
+}
+
+#blockTwoDivFive{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+#blockTwoDivFive input{
+    height: 3.8vh;
+    margin-top: 4px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid var(--button);
+}
+
+#blockTwoDivSix{
+    margin: 5px;
+}
+#blockTwoDivSix span{
+    padding: 5px;
+}
+@media only screen and (max-width:1100px){
+    #blockTwoDivSix{
+        margin: 0px;
+    }
+    #blockTwoDivSix span{
+       padding: 0px;
+    } 
+}
+#blockTwoDivSeven{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    cursor:default;
+}
+#blockTwoDivSeven input{
+    border-radius: 5px;
+    width: 9vw;
+}
+
+#blockTwoDivEight{
+    margin: 10px;
+} 
+#blockTwoDivEight label{
+    font-size: 2vh;
+}
+#blockTwoDivNine{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+#blockTwoDivNine button{
+    width: 6.5vw;
+    height: 3.3vh;
+    color: var(--fontColor);
+    background-color: var(--button);
+    border-radius: 5px;
+    border: none;
+    cursor:pointer;
+}
+#blockTwoDivTen a{
+    color:  var(--white);
+    text-decoration: underline blue;
+}
+
+
+/* Manager details block */
+
+#managerDetailsBlock{
+    width: 85vw;
+    /* background-color: red; */
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #faf6f6;
+}
+#managerDetailsBlockArticle{
+    position: relative;
+    width: 20vw;
+    height: 80vh;
+    justify-content: center;
+    top: 20px;
+    border: 2px solid black
+}
+#managerDetailsBlockDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#managerDetailsBlockDiv p{
+    padding: 10px;
+}
+#managerDetailsBlockDiv2{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#managerDetailsBlockDiv2 button{
+    width: 83px;
+    height: 23px;
+    background-color: rgb(255, 0, 0);
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+}
+#managerDetailsBlockDiv2 button:hover{
+    background-color: rgb(255, 176, 4);
+}
+#managerDetailsBlockDiv2 a{
+    color: var(--white);
+}

@@ -1,0 +1,95 @@
+#HomePageBlock{
+    background-image: url("../assets/wp7245998.webp");
+    /* background-image: url("../assets/DanceBackGround.avif"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.list{
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    font-size: 25px;
+    font-weight: 400; 
+    margin-bottom: 91vh;
+}
+.list li{ 
+margin-right: 50px;
+font-weight: bolder;
+text-shadow: 10px 0px 20px rgb(255, 0, 0);
+}
+.list li:hover{
+    text-decoration: 2px underline rgb(48, 48, 250);
+}
+.list li a{
+  text-decoration: none;
+  color: white;
+}
+.list{
+    padding: 0px 100px;
+    padding-top: 30px;
+}
+
+#staticmain{
+    /* border-top: 2px solid black; */
+    width: 100%;
+    height: 63vh;
+}
+#staticmain article{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+    padding-top: 50px;
+}
+
+#staticimg{
+width: 60%;
+/* background-color: red; */
+}
+#staticimg img{
+    width: 700px;
+    height: 400px;
+}
+#staticdata{
+    width: 40%;
+}
+#staticdata h1{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    margin: 10px;
+    text-decoration: 2px underline red;
+    /* color: rgb(116, 112, 112); */
+}
+#staticdata p{
+    padding: 0;
+    color: rgb(116, 112, 112);
+    font-size: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#staticdata h4{
+    margin: 10px;
+    position: relative;
+    font-size: 18px;
+    text-decoration: underline blue;
+}
+#staticdata div{
+    display: flex;
+    justify-content: space-evenly;
+}
+#staticdata button{
+    width: 140px;
+    height: 27px;
+    border-radius: 5px;
+    border: none;
+    color: #eee;
+    background: linear-gradient(rgb(255, 0, 0), rgb(100, 95, 76));
+}
+#staticdata button:hover {
+    background: linear-gradient(#ffb700, #686666);
+}

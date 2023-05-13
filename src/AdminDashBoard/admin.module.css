@@ -1,0 +1,273 @@
+:root{
+    --button:#1e66da;
+    --fontColor: #fff;
+    --heading:rgb(95, 85, 85);
+}
+
+/* admin register css */
+
+#blockTwo{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 30px;
+    /* cursor: pointer; */
+    /* border: 2px solid black; */
+}
+#blockTwoSectionOne{
+    flex-basis: 30%;
+    cursor:grab;
+}
+#blockTwoSectionTwo{
+    display: flex;
+    /* border: 2px solid black; */
+    flex-basis: 18%;
+    margin-left: 10px;
+    color: var(--heading);
+}
+#blockTwoSectionTwo h3{
+    text-align: center;
+    /* font-family:Arial, Helvetica, sans-serif; */
+    font-size: 3vh;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color:var(--heading);
+}
+#blockTwoDivOne{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+#blockTwoDivOne label{
+    color: var(--heading);
+}
+#blockTwoDivOne input{
+    height: 3.8vh;
+    margin-top: 4px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid var(--button);
+}
+
+#blockTwoDivTwo{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+#blockTwoDivTwo input{
+    height: 3.8vh;
+    margin-top: 4px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid var(--button);
+}
+
+#blockTwoDivThree{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+#blockTwoDivThree input{
+    height: 3.8vh;
+    margin-top: 4px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid var(--button);
+}
+
+#blockTwoDivFour{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+#blockTwoDivFour input{
+    height: 3.8vh;
+    margin-top: 4px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid var(--button);
+}
+
+#blockTwoDivFive{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+#blockTwoDivFive input{
+    height: 3.8vh;
+    margin-top: 4px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid var(--button);
+}
+
+#blockTwoDivSix{
+    margin: 5px;
+}
+#blockTwoDivSix span{
+    padding: 5px;
+}
+@media only screen and (max-width:1100px){
+    #blockTwoDivSix{
+        margin: 0px;
+    }
+    #blockTwoDivSix span{
+       padding: 0px;
+    } 
+}
+#blockTwoDivSeven{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    cursor:default;
+}
+#blockTwoDivSeven input{
+    border-radius: 5px;
+    width: 9vw;
+}
+
+#blockTwoDivEight{
+    margin: 10px;
+} 
+#blockTwoDivEight label{
+    font-size: 2vh;
+}
+#blockTwoDivNine{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+#blockTwoDivNine button{
+    width: 6.5vw;
+    height: 3.3vh;
+    color: var(--fontColor);
+    background-color: var(--button);
+    border-radius: 5px;
+    border: none;
+    cursor:pointer;
+}
+
+
+/* admin dashboard */
+
+#AdminDashboardBlock{
+    display: flex;
+    height: 100vh;
+    /* padding: 10px 0px ; */
+    width: 100vw;
+}
+
+
+/* AdminSideBarBlock */
+#AdminSideBarBlock{
+    cursor: pointer;
+    border-right: 2px solid black;
+    width: 18%;
+}
+#AdminSideBarBlock h2{
+    font-weight: 400;
+    font-size: 3.2vh;
+    text-decoration: underline blue;
+    font-style: italic;
+    padding: 10px 30px;
+    /* padding-left: 30px; */
+    /* padding-right: 0; */
+}
+#AdminSideBarBlockUl li{
+    border-bottom: 2px solid black;
+}
+#AdminSideBarBlockUl li{
+    font-size: 2.5vh;
+    border-radius: 2px;
+    padding: 10px;
+    padding-left: 10px;
+    list-style: none;
+    color: grey;
+}
+#AdminSideBarBlockUl li:hover{
+    text-decoration: underline red;
+    /* transition: 1s; */
+}
+#AdminSideBarBlockUl li a{
+    text-decoration: none;
+    color: grey;
+}
+
+
+/* view acacdemy manager block */
+#viewAcademicManagerBlock{
+    width: 82vw;
+}
+#ViewAcademicManagerNumber{
+    width: inherit;
+    height: 7vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 4vh;
+    padding-top: 5px;
+    font-weight: 500;
+    font-style:oblique;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-bottom: 2px solid red;
+}
+#ViewAcademicManagerNumber span{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 2vw;
+    background-color: red;
+    border-radius: 10px;
+    color: #fff;
+}
+
+#ViewAcademicManagerArticle{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 10px; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+}
+#ViewAcademicManagerArticle nav{
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    position: relative;
+    left: 20px;
+    color: #d2c8c8;
+}
+#viewAcademicManagerBlock ul {
+    margin: 5px;
+    list-style: none;
+}
+#viewAcademicManagerBlock ul li{
+    padding: 5px;
+}
+#ViewAcademicManagerArticle h3{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.9vh;
+    color: var(--fontColor);
+}
+#ViewAcademicManagerArticle button{
+    height: 24px;
+    width: 150px;
+    background-color: red;
+    margin: 5px;
+    border-radius: 4px;
+    border: none;
+    font-size: 2.3vh;
+}
+#ViewAcademicManagerArticle button a{
+    color: #ffffff;
+}
+#ViewAcademicManagerArticle button:hover{
+    background-color: #daa51e;
+    width: 140px;
+}

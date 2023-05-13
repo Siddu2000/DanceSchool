@@ -1,0 +1,268 @@
+:root{
+    --button:#1e66da;
+    --fontColor: #fff;
+    --heading:rgb(95, 85, 85);
+}
+
+/* login page */
+#blockOne{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    height: 40vh;
+    margin: 20px;
+    margin-top: 40px;
+}
+#blockOne h4{
+    text-decoration: underline #e47a17;
+    font-size: 3vh;
+    font-style: italic;
+    font-weight: 400;
+    content: '\e8b9';
+}
+#blockOneArticle{
+    position: static;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 27vw;
+    padding: 10px;
+    box-shadow: 5px 10px rgb(139, 128, 128);
+}
+#blockOneDivOne{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#blockOneDivOne input{
+    width: 80%;
+    margin: 5px;
+    height: 3.8vh;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid var(--button);
+}
+#blockOneDivOneDiv{
+    display: flex;
+    width: 83%;
+    position: relative;
+}
+#blockOneDivOneDiv input{
+    width: 100%;
+}
+#blockOneDivOneDiv :last-child{
+    position: absolute;
+    z-index: 5;
+    right: 7px;
+    top: 3px;
+}
+#blockOneDivTwo{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+#blockOneDivTwo div,input,label{
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1200px) {
+    #blockOneDivTwo{
+        font-size: 13px;
+    }
+    #blockOneDivThree button{
+        font-size: 14px;
+    }
+    #blockOneDivFour{
+        font-size: 14px;        
+    }
+}
+@media only screen and (max-width:850px) {
+    #blockOneDivTwo{
+        font-size: 10px;
+    }
+    #blockOneDivThree button{
+        font-size: 10px;
+    }
+    #blockOneDivFour{
+        font-size: 10px;        
+    }
+}
+#blockOneDivThree button{
+    height: 4vh;
+    width: 70%;
+    /* width: 100%; */
+    border-radius: 5px;
+    border: none;
+    color: var(--fontColor);
+    background-color: var(--button) ;
+    cursor:pointer;
+}
+#blockOneDivFour a{
+    color: black;
+    text-decoration: 2px underline blue;
+}
+
+
+/* register page css */
+
+#blockTwo{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    /* margin-top: 20px; */
+    /* cursor: pointer; */
+    /* border: 2px solid black; */
+}
+#blockTwoSectionOne{
+    /* flex-basis: 10%; */
+    /* position: absolute; */
+    cursor:grab;
+    /* margin-top: -10; */
+}
+#blockTwoSectionTwo{
+    display: flex;
+    width: 20vw;
+    /* border: 2px solid black; */
+    /* flex-basis: 28%; */
+    margin-left: 10px;
+    position: relative;
+    color: var(--heading);
+}
+#blockTwoSectionTwo h3{
+    text-align: center;
+    width: 20vw;
+    /* font-family:Arial, Helvetica, sans-serif; */
+    font-size: 3vh;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color:var(--heading);
+}
+#blockTwoDivOne{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+#blockTwoDivOne label{
+    color: var(--heading);
+}
+#blockTwoDivOne input{
+    height: 3.8vh;
+    margin-top: 4px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid var(--button);
+}
+
+#blockTwoDivTwo{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+#blockTwoDivTwo input{
+    height: 3.8vh;
+    margin-top: 4px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid var(--button);
+}
+
+#blockTwoDivThree{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+#blockTwoDivThree input{
+    height: 3.8vh;
+    margin-top: 4px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid var(--button);
+}
+
+#blockTwoDivFour{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+#blockTwoDivFour input{
+    height: 3.8vh;
+    margin-top: 4px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid var(--button);
+}
+
+#blockTwoDivFive{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+#blockTwoDivFive input{
+    height: 3.8vh;
+    margin-top: 4px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid var(--button);
+}
+
+#blockTwoDivSix{
+    margin: 5px;
+}
+#blockTwoDivSix span{
+    padding: 5px;
+}
+@media only screen and (max-width:1100px){
+    #blockTwoDivSix{
+        margin: 0px;
+    }
+    #blockTwoDivSix span{
+       padding: 0px;
+    } 
+}
+#blockTwoDivSeven{
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    cursor:default;
+}
+#blockTwoDivSeven input{
+    border-radius: 5px;
+    width: 9vw;
+    border: 1px solid grey;
+    /* border: none; */
+}
+
+#blockTwoDivEight{
+    margin: 10px;
+    width: 70%;
+} 
+#blockTwoDivEight label{
+    font-size: 2vh;
+}
+#blockTwoDivNine{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 10px;
+}
+#blockTwoDivNine button{
+    width: 6.5vw;
+    height: 3.3vh;
+    color: var(--fontColor);
+    background-color: var(--button);
+    border-radius: 5px;
+    border: none;
+    cursor:pointer;
+}
+#blockTwoDivTen{
+    width: 80%;
+    font-size: 15px;
+    display: block;
+}
+#blockTwoDivTen a{
+    color:  black;
+    text-decoration: 2px underline blue;
+}
