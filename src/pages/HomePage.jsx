@@ -1,7 +1,6 @@
 import React from 'react'
 import STYLE from './pages.module.css'
 import { Link, useNavigate } from 'react-router-dom'
-import StaticDetails from './StaticDetails'
 import Bharatanatyam from '../DanceForms/Bharatanatyam'
 import DolluKunitha from './../DanceForms/DolluKunitha';
 import Kathak from './../DanceForms/Kathak';
@@ -26,12 +25,13 @@ const HomePage = () => {
             <li onClick={removeStorage}>LOGOUT</li>
           </ul>
         </nav>
-        <StaticDetails/>
+        <center>
         <Bharatanatyam/>
         <DolluKunitha/>
         <Kathak/>
         <Kuchipudi/>
        <Yakshagana/>
+       </center>
       </article>
     </section>
   )

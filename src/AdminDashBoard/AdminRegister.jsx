@@ -6,7 +6,7 @@ import STYLE from './admin.module.css'
 
 
 const AdminRegister = () => {
-    const [state, setState] = useState({
+    let [state, setState] = useState({
         userName: "",
         password: "",
         confirmPassword:"",
@@ -18,26 +18,26 @@ const AdminRegister = () => {
     let { userName, password, dob, email, gender, phone , confirmPassword} = state;
     let navigate = useNavigate()
 
-    const handleChange = (e) => {
+    let handleChange = (e) => {
         e.preventDefault()
         let { name, value } = e.target
         setState({ ...state, [name]: value })
     }
-    const handleSubmit = async (e) => {
+    let handleSubmit = async (e) => {
         e.preventDefault()
         try {
             let payload = { userName, password, dob, email, gender, phone }
             let axiosResult = await axiosInstance.post('/admins/save', payload)
             console.log(axiosResult)
             console.log("data successfully sent")
-            navigate("/")
+            navigate("/Admin")
         } catch {
 
         }
         console.log({ userName, password, dob, email, gender, phone })
     }
 
-    const handleCancle = () => {
+    let handleCancle = () => {
         setState({ state: "" })
     }
 
@@ -102,7 +102,7 @@ const AdminRegister = () => {
                                 </div>
                                 <div id={STYLE.blockTwoDivTen}>
                                     <span>Already have an account? </span>
-                                    <Link to="/">Sign in</Link>
+                                    <Link to="/Admin">Sign in</Link>
                                 </div>
                             </section>
                         </form>

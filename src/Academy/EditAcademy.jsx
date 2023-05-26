@@ -30,8 +30,8 @@ const EditAcademy = () => {
       console.log(data);
       navigate("/adminDashBoard/viewAcademyDashBoard")
     }
-    catch (err) {
-      console.log(err)
+    catch {
+      console.log("Unable to Connect")
     }
   }
 
@@ -40,7 +40,7 @@ const EditAcademy = () => {
       <section id={STYLE.EditAcademyBlock}>
         <article>
           <h2>ADD ACADEMY</h2>
-          <form action="">
+          <form action="" onSubmit={handleSubmit}>
             <label htmlFor="academyName">Academy Name:</label>
             <input type="text" id='academyName' name='academyName' value={academyName} onChange={handleChange} placeholder='academy' />
             <label htmlFor="description">Description:</label>
@@ -49,7 +49,7 @@ const EditAcademy = () => {
             <input type="text" id='email' name='email' value={email} onChange={handleChange} placeholder='email' />
             <label htmlFor="contact">Contact:</label>
             <input type="text" id='contact' name='contact' value={contact} onChange={handleChange} minLength="10" maxLength="10" placeholder='contact' />
-            <button onClick={handleSubmit}>Submit</button>
+            <button>Submit</button>
           </form>
         </article>
       </section>

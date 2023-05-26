@@ -5,9 +5,7 @@ import STYLE from './auth.module.css'
 import img from '../assets/free-registration-forms.jpg'
 
 const AcademyManagerRegister = () => {
-  
-  
-  const [state, setState] = useState({
+  let [state, setState] = useState({
     userName: "",
     password: "",
     confirmPassword:"",
@@ -19,15 +17,15 @@ const AcademyManagerRegister = () => {
 let { userName, password, dob, email, gender, phone , confirmPassword} = state;
 let navigate = useNavigate()
 
-const handleChange = (e) => {
+let handleChange = (e) => {
     e.preventDefault()
     let { name, value } = e.target
     setState({ ...state, [name]: value })
 }
-const handleSubmit = async (e) => {
+let handleSubmit = async (e) => {
     e.preventDefault()
     try {
-        const token = window.localStorage.getItem("token")
+        let token = window.localStorage.getItem("token")
         console.log(token)
         let payload = { userName, password, dob, email, gender, phone }
         let axiosResult = await axiosInstance.post('/academymanagers/save', payload, {headers:{Authorization:`Bearer ${token} `}})  
@@ -40,7 +38,7 @@ const handleSubmit = async (e) => {
     console.log({ userName, password, dob, email, gender, phone , })
 }
 
-const handleCancle = () => {
+let handleCancle = () => {
     setState({ state: "" })
 }
 

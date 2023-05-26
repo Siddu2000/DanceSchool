@@ -50,7 +50,7 @@ const AdminLogin = () => {
                     window.localStorage.removeItem("role", role)
                     window.localStorage.removeItem("token", token)
                 }
-                navigate("/homePage")
+                navigate("/")
                 return { role, token, userId }
             }
             jsonData()
@@ -75,7 +75,7 @@ const AdminLogin = () => {
                                 <label htmlFor="remember"> Remember me</label>
                             </div>
                             <div>
-                                <Link to="userRegister">Forgot password?</Link>
+                                <Link to="/adminRegister">Forgot password?</Link>
                             </div>
                         </div>
                         <div id={STYLE.blockOneDivThree}>
@@ -83,7 +83,7 @@ const AdminLogin = () => {
                         </div>
                         <div id={STYLE.blockOneDivFour}>
                             <p>Not a member?</p>
-                            <Link to="userRegister">Register</Link>
+                            <Link to="/adminRegister">Register</Link>
                             {/* <p>or sign up with:</p> */}
                         </div>
                     </form>

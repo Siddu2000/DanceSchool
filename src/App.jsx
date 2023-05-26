@@ -29,7 +29,7 @@ const App = () => {
         <>
             <Router>
                 <Routes>
-                    <Route path="*" element={"page not found"} />
+                    {/* <Route path="*" element={"page not found"} /> */}
                     <Route path="/" element={<PrivateRoute><HomePage /></PrivateRoute>} />
                     <Route path='/events' element={<PrivateRoute><Events/></PrivateRoute>} />
                     <Route path='/login' element={<PublicRoute><Login /></PublicRoute>} />

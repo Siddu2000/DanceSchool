@@ -32,8 +32,8 @@ const EditCourse = () => {
     //   console.log(data);
       navigate("/adminDashBoard/courseDetails")
     }
-    catch(err){
-      console.log(err)
+    catch{
+      console.log("Unable to connect")
     }
   }
 
@@ -42,17 +42,17 @@ const EditCourse = () => {
       <section id={STYLE.EditCourseBlock}>
         <article>
           <h2>ADD COURSE</h2>
-          <form action="">
+          <form action="" onSubmit={handleSubmit}>
             <label htmlFor="courseDurationInMonths">COURSEDURATIONINMONTHS - </label>
             <input type="text" id='courseDurationInMonths' name='courseDurationInMonths' value={courseDurationInMonths} onChange={handleChange} />
 
             <label htmlFor="fee">FEE - </label>
-            <input type="text" id="fee" name='fee' value={fee} onChange={handleChange} minLength="6" maxLength="6" />
+            <input type="text" id="fee" name='fee' value={fee} onChange={handleChange}  />
 
             <label htmlFor="type">TYPE </label>
-            <input type="text" id='type' name='type' value={type} onChange={handleChange} minLength="10" maxLength="10"/>
+            <input type="text" id='type' name='type' value={type} onChange={handleChange}/>
             
-            <button onClick={handleSubmit}>Submit</button>
+            <button>Submit</button>
           </form>
         </article>
       </section>
