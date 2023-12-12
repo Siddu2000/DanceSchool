@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.0280be70.css",
+    "main.js": "/react-gh-pages/static/js/main.3f82b51b.js",
+    "static/media/kuchipudi4.jpg": "/react-gh-pages/static/media/kuchipudi4.70b4e5384dfdfdf4403a.jpg",
+    "static/media/yakshaganna1.jpg": "/react-gh-pages/static/media/yakshaganna1.1cc76af598596abaee66.jpg",
+    "static/media/wp7245998.webp": "/react-gh-pages/static/media/wp7245998.c6a9593ea923eaade21f.webp",
+    "static/media/DolluKunitha1.jpg": "/react-gh-pages/static/media/DolluKunitha1.3e2d8910817174af6be2.jpg",
+    "static/media/free-registration-forms.jpg": "/react-gh-pages/static/media/free-registration-forms.c59f85613e1c528bacc0.jpg",
+    "static/media/bharathnatyam1.jpg": "/react-gh-pages/static/media/bharathnatyam1.ae5964d971d31974f5d6.jpg",
+    "static/media/Kathak1.jpg": "/react-gh-pages/static/media/Kathak1.eacabb3f4b8e8d96381b.jpg",
+    "index.html": "/react-gh-pages/index.html",
+    "main.0280be70.css.map": "/react-gh-pages/static/css/main.0280be70.css.map",
+    "main.3f82b51b.js.map": "/react-gh-pages/static/js/main.3f82b51b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0280be70.css",
+    "static/js/main.3f82b51b.js"
+  ]
+}
