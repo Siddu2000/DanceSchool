@@ -38,7 +38,7 @@ const BranchDetails = () => {
                         return (
                             <>
                                 <nav>
-                                    <ul>
+                                    <ul key={index}>
                                         <li>SL.No - {index + 1}</li>
                                         <li>address - {value.address}</li>
                                         <li>city -  {value.city}</li>

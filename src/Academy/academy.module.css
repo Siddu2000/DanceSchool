@@ -48,7 +48,7 @@
     color: #d2c8c8;
 }
 #ViewAcademyDashBoardArticle  ul {
-    /* justify-content: center; */
+    justify-content: center;
     margin: 5px;
     display: flex ;
     flex-direction: column;

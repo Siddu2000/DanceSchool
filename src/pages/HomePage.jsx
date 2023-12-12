@@ -18,7 +18,7 @@ const HomePage = () => {
     <section id={STYLE.HomePageBlock}>
       <article id={STYLE.HomePageBlockArticle}>
         <nav>
-          <ul className={STYLE.list}>
+          <ul className={STYLE.list} > 
             <li><Link>HOME</Link></li>
             <li><Link to="/events">EVENTS</Link></li>
             <li><Link to="/adminDashBoard">{role === "ROLE_ADMIN" ? "ADMIN DASHBORD" : null}</Link></li>

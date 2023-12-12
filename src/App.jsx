@@ -36,7 +36,7 @@ const App = () => {
                     <Route path='login/register' element={<PublicRoute><Register /></PublicRoute>} />
                     <Route path='/Admin' element={<AdminLogin />} />
                     <Route path='/adminRegister' element={<AdminRegister />} />
-                    
+
                     {/* admin dash board */}
                     <Route path='/adminDashBoard' element={<AdminDashboard />}>
                         {/* academy manager */}

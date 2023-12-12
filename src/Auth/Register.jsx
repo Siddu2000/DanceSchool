@@ -37,7 +37,7 @@ const Register = () => {
             let payload = { userName, password, dob, email, gender, phone }
             let axiosResult = await axiosInstance.post('/users/save', payload)
             console.log(axiosResult)
-            console.log("data successfully sent")
+            // console.log("data successfully sent")
             toast.success(`${email} registered successfully`)
             navigate("/login")
         } catch (error) {

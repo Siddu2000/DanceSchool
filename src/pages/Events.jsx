@@ -30,7 +30,7 @@ const Events = () => {
               return (
                 <>
                   <nav>
-                    <ul>
+                    <ul key={index}>
                       <li>SL.No - {index + 1}</li>
                       <li>courseDurationInMonths - {value.courseDurationInMonths}</li>
                       <li>fee -  {value.fee}</li>

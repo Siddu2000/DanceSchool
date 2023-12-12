@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import axiosInstance from './../helper/Axios';
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import { faker } from '@faker-js/faker';
-
+//import { faker } from '@faker-js/faker';
 import STYLE from './auth.module.css'
 
 const ManagerDetails = () => {
-  const fakeImg = faker.image.city()
+  //const fakeImg = faker.image.city()
   const navigate = useNavigate()
 
   const [state, setState] = useState({
@@ -19,7 +18,6 @@ const ManagerDetails = () => {
 
   })
   const token = window.localStorage.getItem("token")
-  // const { userName, email, phone, role, age, dob, gender } = state
   const { id } = useParams()
 
   useEffect(() => {
@@ -27,7 +25,6 @@ const ManagerDetails = () => {
     let fetchData = async () => {
       let { data } = await axiosInstance.get(`/academymanagers/get/${id}`, { headers: { Authorization: `Bearer ${token}` } })
       let finalData = data.data
-      // console.log(finalData);
       let { userName, email, phone, role, dob, gender } = finalData
       setState({ userName, email, phone, role, dob, gender })
     }
@@ -43,7 +40,7 @@ const ManagerDetails = () => {
     <>
       <section id={STYLE.managerDetailsBlock}>
         <article id={STYLE.managerDetailsBlockArticle}>
-          <img src={fakeImg} alt="" height="200px" width="300px" />
+          {/* <img src={fakeImg} alt="" height="50px" width="50px" /> */}
           <div id={STYLE.managerDetailsBlockDiv}>
             <p>Name - {state.userName}</p>
             <p>Email - {state.email}</p>

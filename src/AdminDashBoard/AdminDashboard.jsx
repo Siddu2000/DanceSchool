@@ -2,7 +2,6 @@ import React from 'react'
 import AdminSideBar from './AdminSideBar'
 import AdminMainBar from './AdminMainBar';
 import STYLE from './admin.module.css'
-
 import { useLocation } from 'react-router-dom';
 
 const AdminDashboard = () => {

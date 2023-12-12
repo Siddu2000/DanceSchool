@@ -7,8 +7,6 @@ import STYLE from './branch.module.css'
 
 const BranchDashBoard = () => {
   // doc code 
-
-
   let { id } = useParams()
 
   let navigate = useNavigate()
@@ -30,8 +28,6 @@ const BranchDashBoard = () => {
     setState({ ...state, [name]: value })
   }
 
-
-
   let handleSubmit = async (e) => {
     e.preventDefault()
     console.log(state);
@@ -43,14 +39,10 @@ const BranchDashBoard = () => {
         phone,
         pincode,
         id
-
       }
-
       await axiosInstance.put(`/branches/update/${id}`, payload, { headers: { Authorization: `Bearer ${token}` } })
       alert(`Data Successfully Updated ${id}`)
       navigate("/adminDashBoard/branchDetails")
-
-
     }
     catch {
       console.log("Unable to update the Data");

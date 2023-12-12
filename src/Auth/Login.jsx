@@ -94,7 +94,7 @@ const Login = () => {
                         </div>
                         <div id={STYLE.blockOneDivTwo}>
                             <div>
-                                <input type="checkbox" name="remember" id="remember"  mand/>
+                                <input type="checkbox" name="remember" id="remember" />
                                 <label htmlFor="remember"> Remember me</label>
                             </div>
                             <div>

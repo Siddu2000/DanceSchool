@@ -12,7 +12,7 @@ const AdminLogin = () => {
         userEmail: "",
         password: ""
     })
-    const { userEmail, password } = state
+    const { userEmail, password } = state;
     const navigate = useNavigate()
 
     const handleChange = (e) => {
@@ -40,7 +40,7 @@ const AdminLogin = () => {
             // }
             let jsonData = async () => {
                 let { role, token, userId } = data
-                console.log(role, token, userId)
+                // console.log(role, token, userId)
                 if (token) {
                     window.localStorage.setItem("userId", userId)
                     window.localStorage.setItem("role", role)
